@@ -1,6 +1,7 @@
 mod the_rust_programming_language;
-use the_rust_programming_language::guessing_game;
-use the_rust_programming_language::test;
+mod rust_by_pratice;
+
+
 fn main() {
-    test::test();
+    rust_by_pratice::basic_types::numbers::computations();
 }
