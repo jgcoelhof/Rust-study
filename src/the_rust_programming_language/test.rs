@@ -1,24 +1,31 @@
-use std::io;
-use rand::Rng;
-use std::cmp::Ordering;
+struct User{
+    active:bool,
+    username: String,
+    email:String,
+    sign_in_count:u64
+}
+fn main() {
+    let mut user1 = User {
+        active: true,
+        username: String::from("someusername123"),
+        email: String::from("someone@example.com"),
+        sign_in_count: 1,
+    };
 
-pub fn test() {
-    println!("Guess the number.");
-    let secret_number = rand::thread_rng().gen_range(1..=100);
-    loop {
-        let mut guess = String::new();
-        io::stdin().read_line(&mut guess).expect("Failed to read line.");
-        let guess: u8 = match guess.trim().parse() {
-            Ok(num) => num,
-            Err(_) => continue,
-        };
-        match guess.cmp(&secret_number) {
-            Ordering::Less => println!("Too small!"),
-            Ordering::Greater => println!("Too big!"),
-            Ordering::Equal => {
-                println!("You win!");
-                break;
-            }
-        }
+    user1.email = String::from("anotheremail@example.com");
+
+    let user2 = User {
+        active: user1.active,
+        username: user1.username,
+        email: String::from("another@example.com"),
+        sign_in_count: user1.sign_in_count,
+    };
+}
+fn build_user(email: String, username: String) -> User {
+    User {
+        active: true,
+        username,
+        email,
+        sign_in_count: 1,
     }
 }
