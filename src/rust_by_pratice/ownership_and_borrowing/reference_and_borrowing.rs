@@ -1,6 +1,8 @@
 // /Reference and Borrowing
 // Reference
 // 🌟
+#[allow(dead_code)]
+
 pub fn reference() {
     let x = 5;
     // Fill the blank
@@ -11,6 +13,7 @@ pub fn reference() {
 
 
 //🌟
+#[allow(dead_code)]
 
 pub fn reference2() {
     let x = 5;
@@ -23,6 +26,7 @@ pub fn reference2() {
 }
 
 //🌟
+#[allow(dead_code)]
 
 
 // Fix error
@@ -33,10 +37,12 @@ pub fn reference3() {
 
     println!("Success!");
 }
+#[allow(dead_code)]
 
-fn borrow_object(s: &String) {}
+fn borrow_object(_s: &String) {}
 
 //🌟
+#[allow(dead_code)]
 
 // Fix error
 pub fn reference4() {
@@ -46,16 +52,18 @@ pub fn reference4() {
 
     println!("Success!");
 }
+#[allow(dead_code)]
 
 fn push_str(s: &mut String) {
     s.push_str("world")
 }
 
 //🌟🌟
+#[allow(dead_code)]
 
 
 pub fn reference5() {
-    let mut s = String::from("hello, ");
+    let s = String::from("hello, ");
 
     // Fill the blank to make it work
     let mut p = s;
@@ -69,6 +77,7 @@ pub fn reference5() {
 // ref can be used to take references to a value, similar to &.
 //
 // 🌟🌟🌟
+#[allow(dead_code)]
 
 pub fn refref() {
     let c = '中';
@@ -84,6 +93,7 @@ pub fn refref() {
 
     println!("Success!");
 }
+#[allow(dead_code)]
 
 // Get memory address string
 fn get_addr(r: &char) -> String {
@@ -93,6 +103,7 @@ fn get_addr(r: &char) -> String {
 //Borrowing rules
 // 🌟
 
+#[allow(dead_code)]
 
 // Remove something to make it work
 // Don't remove a whole line !
@@ -109,6 +120,7 @@ pub fn borrowing() {
 
 //Mutability
 // 🌟 Error: Borrow an immutable object as mutable
+#[allow(dead_code)]
 
 
 pub fn mutability() {
@@ -121,6 +133,7 @@ pub fn mutability() {
 }
 
 //🌟🌟 Ok: Borrow a mutable object as immutable
+#[allow(dead_code)]
 
 // This code has no errors!
 pub fn mutability2() {
@@ -134,6 +147,7 @@ pub fn mutability2() {
 }
 //NLL
 // 🌟🌟
+#[allow(dead_code)]
 
 
 // Comment one line to make it work
@@ -147,13 +161,14 @@ pub fn nll() {
 
     println!("{}",r1);
 }
+#[allow(dead_code)]
 
 pub fn nll2(){
     let mut s = String::from("hello, ");
 
-    let r1 = &mut s;
-    let r2 = &mut s;
+    let _r1 = &mut s;
+    let _r2 = &mut s;
     // Add one line below to make a compiler error: cannot borrow `s` as mutable more than once at a time
     // You can't use r1 and r2 at the same time
-    let r3 = &s;
+    let _r3 = &s;
 }

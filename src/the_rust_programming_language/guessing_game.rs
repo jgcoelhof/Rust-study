@@ -1,6 +1,7 @@
 use std::cmp::Ordering;
 use std::io;
 use rand::Rng;
+#[allow(dead_code)]
 
 pub fn guessing_game() {
     println!("Guess the number!");

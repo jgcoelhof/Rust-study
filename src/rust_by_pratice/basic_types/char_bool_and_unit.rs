@@ -4,6 +4,8 @@
 
 // Make it work
 use std::mem::size_of_val;
+#[allow(dead_code)]
+
 pub fn char() {
     let c1 = 'a';
     assert_eq!(size_of_val(&c1),4);
@@ -15,12 +17,14 @@ pub fn char() {
 }
 
 //🌟
+#[allow(dead_code)]
 
 // Make it work
 pub fn char2() {
     let c1 = String::from("中");
     print_char(c1);
 }
+#[allow(dead_code)]
 
 fn print_char(c : String) {
     println!("{}", c);
@@ -29,6 +33,7 @@ fn print_char(c : String) {
 
 //Bool
 //🌟
+#[allow(dead_code)]
 
 // Make println! work
 pub fn bool() {
@@ -39,6 +44,7 @@ pub fn bool() {
         println!("Success!");
     }
 }
+#[allow(dead_code)]
 
 
 //🌟
@@ -53,6 +59,7 @@ pub fn bool2() {
 
 //Unit type
 // 🌟🌟
+#[allow(dead_code)]
 
 
 // Make it work, don't modify `implicitly_ret_unit` !
@@ -64,11 +71,13 @@ pub fn unit_type() {
 
     println!("Success!");
 }
+#[allow(dead_code)]
 
 fn implicitly_ret_unit_wrapper() -> (i32, i32) {
     implicitly_ret_unit();
     (2, 3)
 }
+#[allow(dead_code)]
 
 fn implicitly_ret_unit() {
 }
@@ -76,6 +85,7 @@ fn implicitly_ret_unit() {
 
 //🌟🌟 What's the size of the unit type?
 
+#[allow(dead_code)]
 
 // Modify `4` in assert to make it work
 pub fn unit_type2() {

@@ -1,5 +1,5 @@
 use actix_web::{get, web, App, HttpResponse, HttpServer, Responder, Result};
-use serde::{Serialize};
+use serde::Serialize;
 use crate::actix_api;
 
 
@@ -17,6 +17,7 @@ async fn healthcheck() -> impl Responder {
     };
     HttpResponse::Ok().json(response)
 }
+#[allow(dead_code)]
 
 // será chamada se o cliente solicitar um recurso que não esteja registrado no servidor.
 async fn not_found() -> Result<HttpResponse> {

@@ -1,5 +1,7 @@
 //🌟🌟
 // Make it work with two ways
+#[allow(dead_code)]
+
 pub fn statements_and_expressions() {
     let v = {
         let mut x = 1;
@@ -16,6 +18,7 @@ pub fn statements_and_expressions() {
 
 
 
+#[allow(dead_code)]
 
 pub fn statements_and_expressions2() {
     let v = 3;
@@ -27,6 +30,7 @@ pub fn statements_and_expressions2() {
 }
 
 //🌟
+#[allow(dead_code)]
 
 
 pub fn statements_and_expressions3() {
@@ -35,6 +39,7 @@ pub fn statements_and_expressions3() {
 
     println!("Success!");
 }
+#[allow(dead_code)]
 
 fn sum(x: i32, y: i32) -> i32 {
     x + y

@@ -1,6 +1,7 @@
 //Ownership
 // 🌟🌟
 
+#[allow(dead_code)]
 
 pub fn ownership() {
     // Use as many approaches as you can to make it work
@@ -21,6 +22,7 @@ pub fn ownership() {
 }
 
 //🌟🌟
+#[allow(dead_code)]
 
 // Don't modify code in main!
 pub fn ownership2() {
@@ -29,6 +31,7 @@ pub fn ownership2() {
 
     println!("{}", s2);
 }
+#[allow(dead_code)]
 
 // Only modify the code below!
 fn take_ownership(s: String) -> String {
@@ -37,11 +40,13 @@ fn take_ownership(s: String) -> String {
 }
 // 🌟🌟
 
+#[allow(dead_code)]
 
 pub fn ownership3() {
     let s = give_ownership();
     println!("{}", s);
 }
+#[allow(dead_code)]
 
 // Only modify the code below!
 fn give_ownership() -> String {
@@ -52,6 +57,7 @@ fn give_ownership() -> String {
 }
 
 //🌟🌟
+#[allow(dead_code)]
 
 pub fn ownership4() {
     // Fix the error without removing any code
@@ -61,11 +67,13 @@ pub fn ownership4() {
 
     println!("{}", s);
 }
+#[allow(dead_code)]
 
 fn print_str(s: String) {
     println!("{}", s)
 }
 //🌟🌟
+#[allow(dead_code)]
 
 pub fn ownership5() {
     // Don't use clone ,use copy instead
@@ -78,6 +86,7 @@ pub fn ownership5() {
 // Mutability can be changed when ownership is transferred.
 //
 // 🌟
+#[allow(dead_code)]
 
 pub fn mutability() {
 
@@ -95,6 +104,7 @@ pub fn mutability() {
 
 //🌟🌟🌟
 
+#[allow(dead_code)]
 
 pub fn mutability2() {
     let x = Box::new(5);
@@ -114,6 +124,7 @@ pub fn mutability2() {
 //🌟
 
 use std::mem;
+#[allow(dead_code)]
 
 pub fn partial_move() {
     let mut t = (String::from("hello"), String::from("world"));
@@ -124,6 +135,7 @@ pub fn partial_move() {
     println!("{:?}", (&t.0, &t.1));
 }
 //🌟🌟
+#[allow(dead_code)]
 
 pub fn partial_move2() {
     let t = (String::from("hello"), String::from("world"));

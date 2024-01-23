@@ -9,6 +9,8 @@ pub struct Database {
 }
 
 impl Database {
+    #[allow(dead_code)]
+
     pub fn new() -> Self {
         let todos = Arc::new(Mutex::new(vec![]));
         Database { todos }

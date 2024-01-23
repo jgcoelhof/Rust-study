@@ -1,6 +1,6 @@
 //Binding and mutability
 
-use std::ffi::CString;
+#[allow(dead_code)]
 
 // Fix the error below with least amount of modification to the code
 //🌟 A variable can be used only if it has been initialized.
@@ -13,6 +13,7 @@ pub fn assert() {
 }
 //🌟 Use mut to mark a variable as mutable.
 
+#[allow(dead_code)]
 
 // Fill the blanks in the code to make it compile
 pub fn mutt() {
@@ -26,6 +27,7 @@ pub fn mutt() {
 
 //A scope is the range within the program for which the item is valid.
 //🌟
+#[allow(dead_code)]
 
 
 // Fix the error below with least amount of modification
@@ -38,12 +40,14 @@ pub fn scope() {
     println!("The value of x is {} and value of y is {}", x, y);
 }
 //🌟🌟
+#[allow(dead_code)]
 
 // Fix the error with the use of define_x
 pub fn scope2() {
     let x = define_x();
     println!("{}, world", x);
 }
+#[allow(dead_code)]
 
 fn define_x() -> &'static str {
     "hello"
@@ -54,6 +58,7 @@ fn define_x() -> &'static str {
 
 //🌟🌟
 
+#[allow(dead_code)]
 
 // Only modify `assert_eq!` to make the `println!` work(print `42` in terminal)
 pub fn shadowing() {
@@ -70,23 +75,24 @@ pub fn shadowing() {
 }
 // 🌟🌟
 
-
+#[allow(dead_code)]
 // Remove a line in the code to make it compile
 pub fn shadowing2() {
-    let mut x: i32 = 1;
-    x = 7;
+    let mut _x: i32 = 1;
+    _x = 7;
     // Shadowing and re-binding
-    let mut x = x;
-    x += 3;
+    let mut _x: i32 = _x;
+    _x += 3;
 
 
-    let y = 4;
+    let _y = 4;
     // Shadowing
-    let y = "I can also be bound to text!";
+    let _y = "I can also be bound to text!";
 
     println!("Success!");
 }
 //Unused variables
+#[allow(dead_code)]
 
 pub fn unused() {
     let x = 1;
@@ -97,6 +103,7 @@ pub fn unused() {
 
 //Destructuring
 // 🌟🌟 We can use a pattern with let to destructure a tuple to separate variables.
+#[allow(dead_code)]
 
 
 // Fix the error below with least amount of modification
@@ -114,6 +121,7 @@ pub fn destructuring() {
 // Introduced in Rust 1.59: You can now use tuple, slice, and struct patterns as the left-hand side of an assignment.
 //
 // 🌟🌟
+#[allow(dead_code)]
 
 pub fn destructuring_assignments() {
     let (x, y);

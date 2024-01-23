@@ -1,31 +1,34 @@
 //Integer
 // 🌟
 
+#[allow(dead_code)]
 
 // Remove something to make it work
 pub fn integer() {
     let x: u8 = 5;
-    let mut y: u8 = 5;
+    let mut _y: u8 = 5;
 
-    y = x;
+    _y = x;
 
-    let z: u8 = 10; // Type of z ?
+    let _z: u8 = 10; // Type of z ?
 
     println!("Success!");
 }
 
 //🌟
+#[allow(dead_code)]
 
 
 // Fill the blank
 pub fn integer2() {
-    let v: u16 = 38_u8 as u16;
+    let _v: u16 = 38_u8 as u16;
 
     println!("Success!");
 }
 
 //🌟🌟🌟
 
+#[allow(dead_code)]
 
 // Modify `assert_eq!` to make it work
 pub fn integer3() {
@@ -34,6 +37,7 @@ pub fn integer3() {
 
     println!("Success!");
 }
+#[allow(dead_code)]
 
 // Get the type of given variable, return a string representation of the type  , e.g "i8", "u8", "i32", "u32"
 fn type_of<T>(_: &T) -> String {
@@ -41,6 +45,7 @@ fn type_of<T>(_: &T) -> String {
 }
 
 //🌟🌟
+#[allow(dead_code)]
 
 // Fill the blanks to make it work
 pub fn integer4() {
@@ -51,11 +56,14 @@ pub fn integer4() {
 }
 
 //🌟🌟
+#[allow(dead_code)]
+
 pub fn integer5() {
     let v1 = 251_u16 + 8;
     let v2 = u16::checked_add(251, 8).unwrap();
     println!("{},{}", v1, v2);
 }
+#[allow(dead_code)]
 
 //🌟🌟
 pub fn integer6() {
@@ -68,16 +76,18 @@ pub fn integer6() {
 //Floating-Point
 //🌟
 
+#[allow(dead_code)]
 
 // Fill the blank to make it work
 pub fn floating() {
     let x = 1_000.000_1; // ?
-    let y: f32 = 0.12; // f32
-    let z = 0.01_f64; // f64
+    let _y: f32 = 0.12; // f32
+    let _z = 0.01_f64; // f64
 
     assert_eq!(type_of(&x), "f64".to_string());
     println!("Success!");
 }
+#[allow(dead_code)]
 
 //🌟🌟 Make it work in two distinct ways
 pub fn floating2() {
@@ -85,6 +95,7 @@ pub fn floating2() {
 
     println!("Success!");
 }
+#[allow(dead_code)]
 
 //Range
 // 🌟🌟 Two goals: 1. Modify assert! to make it work 2. Make println! output: 97 - 122
@@ -109,6 +120,8 @@ pub fn range() {
 
 // Fill the blanks
 use std::ops::{Range, RangeInclusive};
+#[allow(dead_code)]
+
 pub fn range2() {
     assert_eq!((1..5), Range{ start: 1, end: 5 });
     assert_eq!((1..=5), RangeInclusive::new(1, 5));
@@ -118,6 +131,7 @@ pub fn range2() {
 
 //Computations
 //🌟
+#[allow(dead_code)]
 
 // Fill the blhttps://practice.rs/basic-types/numbers.html#computationsanks and fix the errors
 pub fn computations() {

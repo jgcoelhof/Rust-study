@@ -14,6 +14,7 @@ pub async fn create_todo(db: Data<Database>, new_todo: Json<Todo>) -> HttpRespon
         Err(err) => HttpResponse::InternalServerError().body(err.to_string()),
     }
 }
+#[allow(dead_code)]
 
 // Nesta função, registraremos todos os nossos endpoints de API no caminho /api usando o método web::scope.
 pub fn config(cfg: &mut web::ServiceConfig) {

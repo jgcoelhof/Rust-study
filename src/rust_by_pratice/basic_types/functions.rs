@@ -2,6 +2,7 @@
 // 🌟🌟🌟
 
 use std::process;
+#[allow(dead_code)]
 
 pub fn functions() {
     // Don't modify the following two lines!
@@ -12,20 +13,24 @@ pub fn functions() {
 
     println!("Success!");
 }
+#[allow(dead_code)]
 
 fn sum(x: i32, y: i32) -> i32 {
     x + y
 }
+#[allow(dead_code)]
 
 //🌟
 pub fn functions2() {
     print();
 }
+#[allow(dead_code)]
 
 // Replace i32 with another type
 fn print() -> String {
     String::from("Success")
 }
+#[allow(dead_code)]
 
 //🌟🌟🌟
 // Solve it in two ways
@@ -33,8 +38,8 @@ fn print() -> String {
 pub fn functions3() {
     never_return();
 
-    println!("Failed!");
 }
+#[allow(dead_code)]
 
 fn never_return() -> ! {
     eprintln!("This function never returns!");
@@ -43,10 +48,12 @@ fn never_return() -> ! {
 
 //Diverging functions
 // Diverging functions never return to the caller, so they may be used in places where a value of any type is expected.
+#[allow(dead_code)]
 
 pub fn diverging_functions() {
     println!("Success!");
 }
+#[allow(dead_code)]
 
 fn get_option(tp: u8) -> Option<i32> {
     match tp {
@@ -71,6 +78,7 @@ fn never_return_fn() -> ! {
 }
 
 //🌟🌟
+#[allow(dead_code)]
 
 pub fn diverging_functions2() {
     // FILL in the blank
