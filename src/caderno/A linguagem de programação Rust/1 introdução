@@ -1,0 +1,12 @@
+INTRODUÇÃO
+
+A ergonomia de alto nível e o controle de baixo nível estão frequentemente em desacordo no design da linguagem de programação; o Rust desafia isso, sendo uma linguagem que ajuda a escrever software de forma mais rápida e confiável. O maior destaque desta linguagem seria o controle de memória, que costuma ser algo incômodo de gerenciar no nível mais baixo.
+
+O Rust pode ser utilizado por todo tipo de pessoa que já tenha um conhecimento básico de programação e deseje aventurar-se em novas ondas. Por conta do seu compilador funcionar como um "grande guardião", as equipes têm mais liberdade e versatilidade com seus códigos; dessa forma, a equipe pode dedicar mais tempo à lógica do projeto.
+
+O Rust traz consigo:
+- CARGO: Gerenciador de dependências incluso e ferramenta de compilação, tornando a compilação e o gerenciamento de dependências algo sem preocupações e consistente em todo o ecossistema.
+- Rustfmt (cargo fmt): código limpo e organizado.
+- Rust Language Server: Possibilita a integração de IDEs para o preenchimento de código e mensagens de erro em linha.
+
+Com essas ferramentas, aumenta-se a produtividade dos desenvolvedores.

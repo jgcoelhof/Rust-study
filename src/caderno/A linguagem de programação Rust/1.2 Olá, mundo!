@@ -1,0 +1,27 @@
+Características básicas do Rust:
+
+- Todos os arquivos em Rust terminam com ".rs".
+- A linguagem segue o padrão snake_case.
+- Compila o arquivo main dentro da pasta src raiz do projeto.
+
+Para executar o comando clássico "Hello, World!", podemos fazê-lo da seguinte forma:
+
+```rust
+fn main() {
+    println!("Hello, World!");
+}
+```
+
+Vamos analisar em detalhes o que aconteceu no seu programa Hello, World! Aqui está a primeira peça do quebra-cabeça:
+
+Essas linhas definem uma função em Rust. A função main é especial: é sempre o primeiro código executado em todos os programas em Rust.
+Na primeira linha de código, declara-se uma função chamada main que não possui parâmetros e não retorna nada. Se houvessem parâmetros, eles estariam entre parênteses.
+O corpo da função fica entre chaves; o Rust exige isso em todos os corpos funcionais, e é de bom estilo deixar a chave de abertura na mesma linha da declaração da função, adicionando um espaço entre elas.
+
+No corpo da função temos o código -> `println!("Hello, world");`.
+
+Um dos detalhes é que no Rust a formatação ocorre através de 4 espaços, ao invés da tabulação.
+O `println!` chama uma macro Rust; se fosse chamar uma função, seria `println`, sem `!`.
+A string entre parênteses é passada como argumento e impressa na tela.
+E em Rust, após cada linha de código, devemos terminar com `;`, indicando que podemos ir para a próxima.
+Rust é uma linguagem compilada antecipadamente.

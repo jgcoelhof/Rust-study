@@ -1,0 +1,15 @@
+*A LINGUAGEM DE PROGRAMAÇÃO RUST*
+
+Empoderamento -> Ir além, programando com confiança em mais domńios
+
+Ex: Um trabalho de baixo nível que lide com gerenciamento de memória, representação de dados e concorrência.
+Geralmente, essa parte da progamação é vista como complexa e distante, mas o rust surgiu para quebrar esses paradigmas. Provendo
+ferramentas amigáveis, sem correr riscos de quebra de segurança. A linguagem foi pensada para ir direcionando-o a um código eficiente
+quando falamos de velocidade e memória.
+
+Quem já trabalha com códigos de baixo nível pode usar o rust para se torcar ainda mais eficaz. Por exemplo, introduzir paralelismo em
+rust é uma operação de baixo risco, visto que o compilador é muito eficiente, já pegando os erros básicos e clássicos, o que gera maior
+ liberdade e confiança.
+
+Além de tudo que já foi dito, vale ressaltar que o rust não se limita apenas ao baixo nível, pois também é possível fazer aplicações
+de linha de comando, web servers e vários outros tipos de códigos.
